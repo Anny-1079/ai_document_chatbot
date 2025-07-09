@@ -1,11 +1,8 @@
 streamlit
-python-dotenv
 langchain
 langchain-community
-langchain-together
-langgraph
-together
-faiss-cpu
-python-pptx
+langchain-groq
+python-dotenv
 sentence-transformers
-torch
+PyPDF2
+faiss-cpu
