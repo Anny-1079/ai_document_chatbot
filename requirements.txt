@@ -2,9 +2,16 @@ streamlit
 python-dotenv
 langchain
 langchain-community
+<<<<<<< HEAD
 langchain-together
 langgraph
 together
+=======
+langchain-groq
+python-dotenv
+sentence-transformers
+PyPDF2
+>>>>>>> 7998315ed2d1b802aa38c98e5a364d7c62226b90
 faiss-cpu
 python-pptx
 sentence-transformers

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Ignore Python virtual environment
 venv/
 
@@ -13,3 +14,11 @@ __pycache__/
 # Ignore system files
 .DS_Store
 Thumbs.db
+=======
+__pycache__/
+*.pyc
+*.pyo
+.env
+venv/
+vectorstores/
+>>>>>>> 7998315ed2d1b802aa38c98e5a364d7c62226b90
