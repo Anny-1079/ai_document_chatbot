@@ -2,12 +2,12 @@ import os
 import streamlit as st
 from langchain_community.document_loaders import PyPDFLoader
 from langchain.text_splitter import RecursiveCharacterTextSplitter
-from langchain.vectorstores import FAISS
+from langchain_community.vectorstores import FAISS   
 from langchain.chains import ConversationalRetrievalChain
 from langchain.memory import ConversationBufferMemory
 from langchain_groq import ChatGroq
 from concurrent.futures import ThreadPoolExecutor
-from langchain_community.embeddings import HuggingFaceEmbeddings
+from langchain_huggingface import HuggingFaceEmbeddings   
 from dotenv import load_dotenv
 
 load_dotenv()
@@ -66,7 +66,8 @@ if pdf_file is not None:
     user_query = st.text_input("Ask a question about your document:")
 
     if user_query:
-        result = qa({"question": user_query})
+        result = qa.invoke({"question": user_query})   
+
         st.write("🤖 Answer:", result["answer"])
 
         with st.expander("Show conversation history"):
