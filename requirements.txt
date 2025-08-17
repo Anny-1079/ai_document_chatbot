@@ -6,3 +6,4 @@ python-dotenv
 sentence-transformers
 PyPDF2
 faiss-cpu
+langchain_huggingface
