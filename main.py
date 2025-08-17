@@ -81,7 +81,7 @@ from langchain_community.document_loaders import PyPDFLoader
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain_community.vectorstores import FAISS
 from langchain.chains import ConversationalRetrievalChain
-from langchain.memory import ChatMessageHistory
+from langchain_community.chat_message_histories import ChatMessageHistory   # <── fixed here
 from langchain_groq import ChatGroq
 from concurrent.futures import ThreadPoolExecutor
 from langchain_huggingface import HuggingFaceEmbeddings
