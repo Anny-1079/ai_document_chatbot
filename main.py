@@ -75,11 +75,32 @@ if any(not import_ok.get(c, False) for c in critical_imports):
 
 # --- End DEBUG import checks. After you fix, remove the above debug block. ---
 
+# ============================
+# ADD THIS COMPATIBILITY BLOCK
+# ============================
+
+# Compatibility import: try old langchain path, then new package
+try:
+    # old API (works for langchain <= ~0.0.350)
+    from langchain.text_splitter import RecursiveCharacterTextSplitter
+    _TEXT_SPLITTER_SOURCE = "langchain.text_splitter"
+except Exception:
+    try:
+        # new package (used by newer langchain versions)
+        from langchain_text_splitters import RecursiveCharacterTextSplitter
+        _TEXT_SPLITTER_SOURCE = "langchain_text_splitters"
+    except Exception as e:
+        raise ImportError(
+            "Could not import RecursiveCharacterTextSplitter from either "
+            "'langchain.text_splitter' or 'langchain_text_splitters'. "
+            "Install a compatible langchain or add langchain_text_splitters to requirements."
+        ) from e
+
 # If imports succeeded, continue with original app code (paste below)
 try:
     # your original imports (wrapped to use already-imported modules)
     from langchain_community.document_loaders import PyPDFLoader
-    from langchain.text_splitter import RecursiveCharacterTextSplitter
+    # from langchain.text_splitter import RecursiveCharacterTextSplitter
     from langchain_community.vectorstores import FAISS
     from langchain.chains import ConversationalRetrievalChain
     from langchain_community.chat_message_histories import ChatMessageHistory
