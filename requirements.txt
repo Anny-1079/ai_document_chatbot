@@ -13,6 +13,8 @@ faiss-cpu
 
 
 
+
+
 ###
 # streamlit
 # langchain
@@ -24,6 +26,7 @@ faiss-cpu
 # faiss-cpu
 # langchain_huggingface
 ###
+
 
 
 
