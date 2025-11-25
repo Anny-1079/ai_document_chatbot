@@ -1,6 +1,6 @@
 streamlit
 langchain==0.0.350
-langchain-community
+langchain-community==0.0.8
 langchain-groq
 python-dotenv
 sentence-transformers
@@ -20,3 +20,4 @@ langchain_huggingface
 # faiss-cpu
 # langchain_huggingface
 ###
+
