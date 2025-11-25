@@ -7,6 +7,7 @@ sentence-transformers
 PyPDF2
 faiss-cpu
 langchain_huggingface
+langchain_text_splitters
 
 
 
@@ -21,6 +22,7 @@ langchain_huggingface
 # faiss-cpu
 # langchain_huggingface
 ###
+
 
 
 
