@@ -1,5 +1,5 @@
 streamlit
-langchain
+langchain==0.0.350
 langchain-community
 langchain-groq
 python-dotenv
@@ -7,3 +7,16 @@ sentence-transformers
 PyPDF2
 faiss-cpu
 langchain_huggingface
+
+
+###
+# streamlit
+# langchain
+# langchain-community
+# langchain-groq
+# python-dotenv
+# sentence-transformers
+# PyPDF2
+# faiss-cpu
+# langchain_huggingface
+###
