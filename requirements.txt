@@ -1,13 +1,15 @@
 streamlit
-langchain==0.0.350
-langchain-community==0.0.8
+langchain
+langchain-community
 langchain-groq
+langchain_text_splitters
+langchain_huggingface
 python-dotenv
 sentence-transformers
 PyPDF2
 faiss-cpu
-langchain_huggingface
-langchain_text_splitters
+
+# force rebuild
 
 
 
@@ -22,6 +24,7 @@ langchain_text_splitters
 # faiss-cpu
 # langchain_huggingface
 ###
+
 
 
 
